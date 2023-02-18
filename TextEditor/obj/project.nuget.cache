@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "XfyXoKKCtM6+14miHo/mrBVZt5voOrFRWe6Vsi+h+brOk7/hSmF+c61A7XYDQDtlI4QjQiO3n+svAXz9W6kLVg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Principales\\TextFiles_ads-master\\TextEditor\\TextEditor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\marctron.admob\\1.9.0.3\\marctron.admob.1.9.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.build.download\\0.11.0\\xamarin.build.download.0.11.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.essentials\\1.7.4\\xamarin.essentials.1.7.4.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\5.0.0.2545\\xamarin.forms.5.0.0.2545.nupkg.sha512"
+  ],
+  "logs": []
+}

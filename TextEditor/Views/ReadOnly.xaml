@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:adView="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             x:Class="TextEditor.Views.ReadOnly"
+             Title="Read-only"
+             BackgroundColor="#ebe4eb">
+    
+    <ContentPage.Content>
+        <ScrollView AbsoluteLayout.LayoutFlags="All">
+            <StackLayout VerticalOptions="FillAndExpand">
+                <adView:MTAdView IsEnabled="True"
+                                 IsVisible="True"
+                                 BackgroundColor="White"
+                                 HeightRequest="60"
+                                 AutoSize="True"
+                                 AdSize="AnchoredAdaptive"
+                                 AdsId="ca-app-pub-6443580320687365/3270038270"/>
+                <Label x:Name="lbl_content"
+                       TextColor="#333"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="20"
+                       FontFamily="{StaticResource lucida}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Pick File" Order="Secondary" x:Name="pickFile"
+                     Clicked="btn_filePick_Clicked"/>
+        <ToolbarItem Text="Play Audio" Order="Secondary" x:Name="playAudio"
+                     Clicked="btn_play_Clicked"/>
+        <ToolbarItem Text="Stop Audio" Order="Secondary" x:Name="stopAudio"
+                     Clicked="btn_stop_Clicked"/>
+        <ToolbarItem Text="Font Size +" Order="Secondary" x:Name="fontSizeMax"
+                     Clicked="btn_fMax_Clicked"/>
+        <ToolbarItem Text="Font Size -" Order="Secondary" x:Name="fontSizeMin" 
+                     Clicked="btn_fMin_Clicked"/>
+        <ToolbarItem Text="Reset" Order="Secondary" x:Name="reset" 
+                     Clicked="btn_reset_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

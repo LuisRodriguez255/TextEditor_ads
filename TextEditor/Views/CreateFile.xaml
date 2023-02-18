@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:custom_controls="clr-namespace:TextEditor.Custom_Controls" xmlns:adView="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             x:Class="TextEditor.Views.CreateFile"
+             Title="Create"
+             BackgroundColor="#ebe4eb">
+    
+    <ContentPage.Content>
+        <AbsoluteLayout VerticalOptions="FillAndExpand">
+            <StackLayout AbsoluteLayout.LayoutBounds="1, 1, 1, 1"
+                         AbsoluteLayout.LayoutFlags="All">
+                <adView:MTAdView IsEnabled="True"
+                                 IsVisible="True"
+                                 BackgroundColor="White"
+                                 HeightRequest="60"
+                                 AutoSize="True"
+                                 AdSize="AnchoredAdaptive"
+                                 AdsId="ca-app-pub-6443580320687365/3270038270"/>
+                <custom_controls:CustomEditor VerticalOptions="FillAndExpand"
+                                              x:Name="txt_content"                 
+                                              Placeholder="Write Here"
+                                              FontFamily="{StaticResource lucida}"
+                                              TextColor="#333"/>
+            </StackLayout>
+            <Button Text="Save" HorizontalOptions="Center"
+                    Clicked="Button_Clicked"
+                    AbsoluteLayout.LayoutBounds="1, 1, -1, -1"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Margin="20"
+                    CornerRadius="10"
+                    BackgroundColor="#8790d6"
+                    TextColor="#ebe4eb"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    FontFamily="{StaticResource lucida}"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

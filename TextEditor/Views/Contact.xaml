@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextEditor.Views.Contact"
+             Title="Contact"
+             BackgroundColor="#ebe4eb">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Margin="20" FontSize="20"
+                   TextColor="#333"
+                   FontFamily="{StaticResource lucida}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="EMAIL HERE"
+                                  x:Name="spn_email"
+                                  TextDecorations="Underline"
+                                  FontAttributes="Bold"
+                                  FontSize="20">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text=" (Just tap to copy it)"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="20, 0, 20, 0" FontSize="20"
+                   TextColor="#333"
+                   FontFamily="{StaticResource lucida}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="My Instagram: ">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text="https://www.instagram.com/fernando_lazyskull/ "
+                                  TextDecorations="Underline"
+                                  FontAttributes="Bold"
+                                  FontSize="20">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text=" (Tap)"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:adView="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             x:Class="TextEditor.Views.ShareFiles"
+             BackgroundColor="#ebe4eb">
+    
+    <ContentPage.Content>
+        <RefreshView x:Name="refreshControl"
+                     Refreshing="refreshControl_Refreshing">
+            <StackLayout x:Name="rootLayout">
+                <adView:MTAdView IsEnabled="True"
+                                 IsVisible="True"
+                                 BackgroundColor="White"
+                                 HeightRequest="60"
+                                 AutoSize="True"
+                                 AdSize="AnchoredAdaptive"
+                                 AdsId="ca-app-pub-6443580320687365/3270038270"/>
+                <Label Text="*If the files do not appear, go to: Settings -> Privacy -> Permission Manager -> Files and media -> select Simple Text File Editor and click on Allow For All Files*"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontFamily="{StaticResource lucida}"
+                   Margin="20"/>
+                <ScrollView>
+                    <StackLayout x:Name="filesLayout">
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>
